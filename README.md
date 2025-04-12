@@ -14,5 +14,5 @@ This program will open an interactive version of Connect Four that allows the us
 
 # Challenges
 * Learn more about the interactive features of the Pygame library, for example mouse input.
-* Make sure that the game can call a draw on its own when both the players get to a point where the game is not winnable.
+* Make sure that the game can call a draw on its own when both the players get to a point where the game is not winnabl
 
