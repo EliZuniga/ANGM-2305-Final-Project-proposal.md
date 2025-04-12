@@ -9,4 +9,5 @@ This program will open an interactive version of Connect Four that allows the us
 # Features 
 * **Feature** 1: The user will be able to use the mouse to decide where the connect four chips will land on, doing this I hope to make the user feel that their decisions matter.
 * **Feature** 2: Two players will be able to play the Connect four game.
-* **Feature** 3: A "Player One Wins!" will appear for the user who gets the first connect four. Having this I believe will make the users stay engaged with the game until they see themselves win. 
+* **Feature** 3: A "Player One Wins!" will appear for the user who gets the first connect four. Having this I believe will make the users stay engaged with the game until they see themselves win.
+* **Feature** 4: if both users do not get a connect four
