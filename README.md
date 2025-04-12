@@ -18,7 +18,8 @@ This program will open an interactive version of Connect Four that allows the us
 * Add color to the connect our color chips.
 
 # Outcomes
-### Ideal Outcome: The program to run a full game with the basic idea of a Connect Four game. If a player wins to have a text pop up to represent the winner, it should also be able to call a draw when the game can’t have a winner.
+### Ideal Outcome: 
+The program to run a full game with the basic idea of a Connect Four game. If a player wins to have a text pop up to represent the winner, it should also be able to call a draw when the game can’t have a winner.
 
 ### Minimal Outcome
 
