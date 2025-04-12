@@ -26,6 +26,7 @@ The minimum outcome would be the program allowing a full playable game that afte
 
 # **Milestones**
 * ### Week 1
+  - Start 
 
 
 
