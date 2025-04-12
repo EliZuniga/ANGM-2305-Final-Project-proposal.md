@@ -26,11 +26,16 @@ The minimum outcome would be the program allowing a full playable game that afte
 
 # **Milestones**
 * ### Week 1
-  - Start developing the main function that will be needed for the four connect game to run at its full potential
+  - Start developing the main function that will be needed for the four connect game to run at its full potential.
 * ### Week 2
-  - Implement the draw system for the game 
-  - Have the vertically suspended grid implemented 
-  - Mouse input works as indented 
+  - Implement the draw system for the game. 
+  - Have the vertically suspended grid implemented. 
+  - Mouse input works as indented.
+* ### Week 3
+  - Finalize the program. 
+  - Optimize the program to have good performance for the best user experience. 
+  - Turn in the Final.
+
 
 
 
