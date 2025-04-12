@@ -1,1 +1,1 @@
-# proposal.md
+# Connect Four
