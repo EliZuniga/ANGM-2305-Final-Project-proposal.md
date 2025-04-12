@@ -25,6 +25,7 @@ The program to run a full game with the basic idea of a Connect Four game. If a 
 The minimum outcome would be the program allowing a full playable game that after a game is won or drawn the user would have to exit out and run the program to play the game again. This would unfortunately mean that the game cannot tell who won or even if the game is playable after a certain point, the game would be playable but would be missing mechanics.
 
 # **Milestones**
+* ### Week 1
 
 
 
