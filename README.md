@@ -18,6 +18,6 @@ This program will open an interactive version of Connect Four that allows the us
 * Add color to the connect our color chips.
 
 # Outcomes
-## Ideal Outcome:
+### Ideal Outcome:
 
 
