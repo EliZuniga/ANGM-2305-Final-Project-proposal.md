@@ -8,3 +8,13 @@ SQUARESIZE = 100
 RADIUS = SQUARESIZE // 2 - 5
 BUTTON_WIDTH = 200
 BUTTON_HEIGHT = 50
+
+#this will be the colors
+BLUE = (0, 0, 255)
+BLACK = (0, 0, 0)
+RED = (255, 0, 0)
+YELLOW = (255, 255, 255)
+WHITE = (255, 255, 255)
+GRAY = (200, 200, 200)
+
+#this will be the gameboard
