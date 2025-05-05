@@ -21,4 +21,10 @@ GRAY = (200, 200, 200)
 def create_board():
     board = []
     for _ in range(ROW_COUNT):
-        row = [0] 
+        row = [0] * COLUMN_COUNT
+        board.append(row)
+    return board
+
+#Drop piece in the board
+def drop_piece(board, row, col, piece):
+    board[row][col] = piece
