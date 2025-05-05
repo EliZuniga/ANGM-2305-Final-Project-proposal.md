@@ -2,7 +2,7 @@ import pygame
 import sys
 
 #this will be the constants
-ROW_Count = 6
+ROW_COUNT = 6
 COLUMN_COUNT = 7
 SQUARESIZE = 100
 RADIUS = SQUARESIZE // 2 - 5
@@ -18,3 +18,7 @@ WHITE = (255, 255, 255)
 GRAY = (200, 200, 200)
 
 #this will be the gameboard
+def create_board():
+    board = []
+    for _ in range(ROW_COUNT):
+        row = [0] 
