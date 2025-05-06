@@ -32,3 +32,23 @@ def drop_piece(board, row, col, piece):
 #This line will check is the column is valid
 def is_valid_location(board, col):
     return board[0][col] == o
+
+#This line will get next available row
+def get_next_open_row(board, col):
+    for r in range(ROW_COUNT - 1, -1, -1):
+        if board[r][col] == 0:
+            return r
+        
+#Will check for a win
+def check_win(board, piece):
+    #Horizontal Check
+    for r in range(ROW_COUNT):
+        for c in range(COLUMN_COUNT - 3):
+            if board[r][c] == piece and board[r][c+1] == piece and board[r][c+3] == piece:
+                return True
+    #Vertical check 
+    for c in range(COLUMN_COUNT):
+        for r in range(ROW_COUNT - 3):
+            if board[r][c] == piece and board[r+2][c] == piece and board[r=3][c] == piece:
+                return True
+    
