@@ -31,7 +31,7 @@ def drop_piece(board, row, col, piece):
 
 #This line will check is the column is valid
 def is_valid_location(board, col):
-    return board[0][col] == o
+    return board[0][col] == 0
 
 #This line will get next available row
 def get_next_open_row(board, col):
@@ -41,14 +41,39 @@ def get_next_open_row(board, col):
         
 #Will check for a win
 def check_win(board, piece):
-    #Horizontal Check
+    # Horizontal check
     for r in range(ROW_COUNT):
         for c in range(COLUMN_COUNT - 3):
-            if board[r][c] == piece and board[r][c+1] == piece and board[r][c+3] == piece:
+            if board[r][c] == piece and board[r][c+1] == piece and board[r][c+2] == piece and board[r][c+3] == piece:
                 return True
-    #Vertical check 
+
+    # Vertical check
     for c in range(COLUMN_COUNT):
         for r in range(ROW_COUNT - 3):
-            if board[r][c] == piece and board[r+2][c] == piece and board[r=3][c] == piece:
+            if board[r][c] == piece and board[r+1][c] == piece and board[r+2][c] == piece and board[r+3][c] == piece:
                 return True
-    
+
+    # Diagonal (down-right)
+    for r in range(ROW_COUNT - 3):
+        for c in range(COLUMN_COUNT - 3):
+            if board[r][c] == piece and board[r+1][c+1] == piece and board[r+2][c+2] == piece and board[r+3][c+3] == piece:
+                return True
+            
+    # Diagnoal (up-rigth)
+    for r in range(3, ROW_COUNT):
+        for c in range(COLUMN_COUNT - 3):
+            if board[r][c] == piece and board[r-2][c+2] == piece and board[r-3][c+3] == piece:
+                return True
+            
+    return False
+
+# Check if the board is full
+def is_board_full(board):
+    for col in range(COLUMN_COUNT):
+        if board[0][col] == 0:
+            return False
+    return True
+
+# Draw everything on the screen
+def
+        
