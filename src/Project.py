@@ -28,3 +28,7 @@ def create_board():
 #Drop piece in the board
 def drop_piece(board, row, col, piece):
     board[row][col] = piece
+
+#This line will check is the column is valid
+def is_valid_location(board, col):
+    return board[0][col] == o
