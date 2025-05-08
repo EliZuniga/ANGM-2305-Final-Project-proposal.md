@@ -75,5 +75,12 @@ def is_board_full(board):
     return True
 
 # Draw everything on the screen
-def
-        
+def draw_board(b0ard,screen, front, turn, message="", show_restart=False):
+    screen.fill(BLACK)
+
+    # This will show message or turn 
+    if message:
+        text = front.render(message, True, WHITE)
+    else:
+        text = front.render(f"Player {turn + 1}'s Turn", True, WHITE)
+    screen.blit(text, (10 , 10))        
