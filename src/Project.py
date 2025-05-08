@@ -75,7 +75,7 @@ def is_board_full(board):
     return True
 
 # Draw everything on the screen
-def draw_board(b0ard,screen, front, turn, message="", show_restart=False):
+def draw_board(board, screen, front, turn, message="", show_restart=False):
     screen.fill(BLACK)
 
     # This will show message or turn 
@@ -83,4 +83,13 @@ def draw_board(b0ard,screen, front, turn, message="", show_restart=False):
         text = front.render(message, True, WHITE)
     else:
         text = front.render(f"Player {turn + 1}'s Turn", True, WHITE)
-    screen.blit(text, (10 , 10))        
+    screen.blit(text, (10 , 10))
+
+    #Show restart button if needed 
+    if show_restart:
+        button_x = (COLUMN_COUNT * SQUARESIZE) // 2 + 100
+        pygame.draw.rect(screen, GRAY, (button_x, 20, BUTTON_WIDTH, BUTTON_HEIGHT)) 
+        restart_text = front.render("Restart" , True, BLACK)
+        screen.blit(restart_text, (button_x + 35, 25))
+
+    #  
