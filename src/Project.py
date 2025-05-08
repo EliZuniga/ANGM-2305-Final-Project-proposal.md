@@ -118,4 +118,15 @@ def main():
     pygame.display.set_caption("Connect Four")
     font = pygame.font.SysFont("monospace", 35)
 
-    board, turn, game_over, message = reset_game(
+    board, turn, game_over, message = reset_game()
+    draw_board(board, screen, font, turn)
+
+    while True:
+        for event in pygame.event.get():
+            if event.type == pygame.QUIT:
+                pygame.quit()
+                sys.exit(
+
+            # Handel mouse click
+            if event.typetype == pygame.MOUSEBUTTONDOWN:
+                x, y = event.pos 
