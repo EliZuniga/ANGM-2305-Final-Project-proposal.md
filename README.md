@@ -1,6 +1,6 @@
 # **Connect Four**
 
-## **Demo**
+# **Demo**
   Demo Video:
 
 # **GitHub Repository**
