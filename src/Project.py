@@ -103,6 +103,19 @@ def draw_board(board, screen, front, turn, message="", show_restart=False):
             if board[r][c] == 1:
                 pygame.draw.circle(screen, RED, (c * SQUARESIZE + SQUARESIZE // 2, (r + 1) * SQUARESIZE + SQUARESIZE // 2), RADIUS)
             elif board[r][c] == 2: 
-                pygame.draw.circle(screen, YELLOW, (c * SQUARESIZE + SQUARESIZE // 2, (r + 1) * SQUARESIZE + SQUARESIZE / 2), RADIUS)
+                pygame.draw.circle(screen, YELLOW, (c * SQUARESIZE + SQUARESIZE // 2, (r + 1) * SQUARESIZE + SQUARESIZE // 2), RADIUS)
 
     pygame.display.update()
+
+# Reset game state
+def reset_game():
+    return create_board(), 0, False, ""
+
+# Main game function 
+def main():
+    pygame.init()
+    screen = pygame.display.set_mode((COLUMN_COUNT * SQUARESIZE, (ROW_COUNT + 1) * SQUARESIZE))
+    pygame.display.set_caption("Connect Four")
+    font = pygame.font.SysFont("monospace", 35)
+
+    board, turn, game_over, message = reset_game(
