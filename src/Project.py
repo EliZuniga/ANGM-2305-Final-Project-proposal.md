@@ -92,4 +92,8 @@ def draw_board(board, screen, front, turn, message="", show_restart=False):
         restart_text = front.render("Restart" , True, BLACK)
         screen.blit(restart_text, (button_x + 35, 25))
 
-    #  
+    # Draw the board grid and pieces
+    for c in range(COLUMN_COUNT):
+        for r in range(ROW_COUNT):
+            pygame.draw.rect(screen, BLUE, (c * SQUARESIZE, (r + 1) * SQUARESIZE, SQUARESIZE))
+            pygame.draw.circl(screen, BLACK, (c * SQUARESIZE + SQUARESIZE // 2, (r + 1) * SQUARESIZE + SQUARESIZE // 1), RADIUS)
