@@ -96,4 +96,13 @@ def draw_board(board, screen, front, turn, message="", show_restart=False):
     for c in range(COLUMN_COUNT):
         for r in range(ROW_COUNT):
             pygame.draw.rect(screen, BLUE, (c * SQUARESIZE, (r + 1) * SQUARESIZE, SQUARESIZE))
-            pygame.draw.circl(screen, BLACK, (c * SQUARESIZE + SQUARESIZE // 2, (r + 1) * SQUARESIZE + SQUARESIZE // 1), RADIUS)
+            pygame.draw.circle(screen, BLACK, (c * SQUARESIZE + SQUARESIZE // 2, (r + 1) * SQUARESIZE + SQUARESIZE // 2), RADIUS)
+
+    for r in range(ROW_COUNT):
+        for c in range(COLUMN_COUNT):
+            if board[r][c] == 1:
+                pygame.draw.circle(screen, RED, (c * SQUARESIZE + SQUARESIZE // 2, (r + 1) * SQUARESIZE + SQUARESIZE // 2), RADIUS)
+            elif board[r][c] == 2: 
+                pygame.draw.circle(screen, YELLOW, (c * SQUARESIZE + SQUARESIZE // 2, (r + 1) * SQUARESIZE + SQUARESIZE / 2), RADIUS)
+
+    pygame.display.update()
