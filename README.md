@@ -4,7 +4,7 @@
   Demo Video:
 
 # **GitHub Repository**
-[GitHub Repo] https://github.com/EliZuniga/proposal.md/blob/main/Proposal.md
+GitHub Repo: https://github.com/EliZuniga/proposal.md/blob/main/Proposal.md
 # Description
 This project is a digital version of the classic board game "Connect Four," a favorite of mine since childhood. I chose this project because I wanted to create something both fun and engaging, and I thought Connect Four would be the perfect fit. My objective was to build a visually appealing game with clear and understandable logic.
 
