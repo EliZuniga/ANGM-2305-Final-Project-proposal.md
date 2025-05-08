@@ -95,7 +95,7 @@ def draw_board(board, screen, front, turn, message="", show_restart=False):
     # Draw the board grid and pieces
     for c in range(COLUMN_COUNT):
         for r in range(ROW_COUNT):
-            pygame.draw.rect(screen, BLUE, (c * SQUARESIZE, (r + 1) * SQUARESIZE, SQUARESIZE))
+            pygame.draw.rect(screen, BLUE, (c * SQUARESIZE, (r + 1) * SQUARESIZE, SQUARESIZE, SQUARESIZE))
             pygame.draw.circle(screen, BLACK, (c * SQUARESIZE + SQUARESIZE // 2, (r + 1) * SQUARESIZE + SQUARESIZE // 2), RADIUS)
 
     for r in range(ROW_COUNT):
@@ -128,7 +128,7 @@ def main():
                 sys.exit()
 
             # Handel mouse click
-            if event.typetype == pygame.MOUSEBUTTONDOWN:
+            if event.type == pygame.MOUSEBUTTONDOWN:
                 x, y = event.pos
 
                 # This line will check if restart button was clicked
@@ -136,7 +136,7 @@ def main():
                     button_x = (COLUMN_COUNT * SQUARESIZE) // 2 + 100
                     if button_x <= x <= button_x + BUTTON_WIDTH and 20 <= y <= 20 + BUTTON_HEIGHT:
                         board, turn, game_over, message = reset_game()
-                        draw_board(board, screen font, turn)
+                        draw_board(board, screen, font, turn)
                         continue
                 
                 # This line will handle playing a move
@@ -144,6 +144,18 @@ def main():
                 if col < COLUMN_COUNT and not game_over:
                     if is_valid_location(board, col):
                         row = get_next_open_row(board, col)
-                        drop_piece(board, row, col, turn + 2)
+                        drop_piece(board, row, col, turn + 1)
 
+                        if check_win(board, turn + 1):
+                            message = f"Player {turn + 1} Wins!"
+                            game_over = True
+                        elif is_board_full(board):
+                            message = "It's a Draw!"
+                            game_over = True 
+                        else: 
+                            turn = (turn + 1) % 2
 
+                draw_board(board, screen, font, turn, message, show_restart=game_over)
+
+if __name__ == "__main__":
+    main()
