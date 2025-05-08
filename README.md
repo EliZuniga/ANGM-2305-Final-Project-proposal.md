@@ -18,3 +18,16 @@ One area I’d like to improve in the future is the user interface—adding anim
 (src) Project.py - This is the main Python file containing the full implementation of the Connect Four game.
 
 Proposal.md - This file includes my original project proposal, outlining the objectives and features I aimed to implement.
+
+Requirements.txt - contains library used for the project 
+
+ReadME.md – contains the demo video link, my repository link, and details about the project 
+
+**Resource that helped me for my project**
+https://youtu.be/UYgyRArKDEs?si=aL0C9Oqms44c3q2s
+
+https://cs50.ai/chat
+
+NL: Programming for Digital Arts
+
+
