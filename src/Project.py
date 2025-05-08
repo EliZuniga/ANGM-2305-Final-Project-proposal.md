@@ -125,8 +125,12 @@ def main():
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
                 pygame.quit()
-                sys.exit(
+                sys.exit()
 
             # Handel mouse click
             if event.typetype == pygame.MOUSEBUTTONDOWN:
-                x, y = event.pos 
+                x, y = event.pos
+
+                # This line will check if restart button was clicked
+                if game_over:
+                    button_x = (COLUMN_COUNT * SQUARESIZE) // 2 + 100
