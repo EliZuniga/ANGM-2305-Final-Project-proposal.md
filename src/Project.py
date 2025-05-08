@@ -134,3 +134,16 @@ def main():
                 # This line will check if restart button was clicked
                 if game_over:
                     button_x = (COLUMN_COUNT * SQUARESIZE) // 2 + 100
+                    if button_x <= x <= button_x + BUTTON_WIDTH and 20 <= y <= 20 + BUTTON_HEIGHT:
+                        board, turn, game_over, message = reset_game()
+                        draw_board(board, screen font, turn)
+                        continue
+                
+                # This line will handle playing a move
+                col = x // SQUARESIZE
+                if col < COLUMN_COUNT and not game_over:
+                    if is_valid_location(board, col):
+                        row = get_next_open_row(board, col)
+                        drop_piece(board, row, col, turn + 2)
+
+
