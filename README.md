@@ -23,7 +23,7 @@ Requirements.txt - contains library used for the project
 
 ReadME.md – contains the demo video link, my repository link, and details about the project 
 
-**Resource that helped me for my project**
+**Resource that helped me for my project**:
 
 https://youtu.be/UYgyRArKDEs?si=aL0C9Oqms44c3q2s
 
