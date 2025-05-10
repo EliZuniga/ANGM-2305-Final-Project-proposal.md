@@ -1,7 +1,7 @@
 # **Connect Four**
 
 # **Demo**
-  Demo Video:
+  Demo Video: https://youtu.be/La5xTNm7Ruc
 
 # **GitHub Repository**
 GitHub Repo: https://github.com/EliZuniga/proposal.md/blob/main/Proposal.md
